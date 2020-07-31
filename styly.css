@@ -1,7 +1,6 @@
 /* CSS Document */
 body{
-	background-color:black;
-	background-size: cover;
+	background-color:white;
 	color: white;
 }
 
@@ -51,7 +50,7 @@ body{
 	position: relative;
 	color: #ff0066;
 	text-align: center;
-	top: 20px;
+	top: 50px;
 	font-size: 80px;
 	margin:auto;
 }
@@ -66,8 +65,8 @@ body{
 	font-size:30px;
 	color: beige;
 	position: relative;
-	top:200px;
-	left: 50px;
+	margin-top: 50%;
+	left: 5%;
 }
 
 
