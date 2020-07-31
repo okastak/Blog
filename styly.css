@@ -50,9 +50,9 @@ body{
 	position: relative;
 	color: #ff0066;
 	text-align: center;
-	top: 500px;
+	top: 20vw;
 	font-size: 80px;
-	margin:500px auto auto auto;
+	margin: auto;
 }
 
 .mid{
