@@ -3,15 +3,15 @@ body{
 	background-color: white;
 	background-size: cover;
 	color: black;
-	font-size: normal;
+	font-size: initial;
 }
 
 #insta{
 	width: 40px;
-	position: fixed;
+	position: absolute;
 	right: 55px;
 	top: 85px;
-	z-index: 10;
+	z-index: 9;
 	display:inline-block;
 	background-image: url("insta.png");
 }
@@ -26,6 +26,7 @@ body{
 	border: 0px solid red;
 	background-color:rgba(255, 182, 193, 0.8);
 	z-index: 10;
+	overflow: hidden;
 }
 
 #menu > a{
@@ -37,13 +38,13 @@ body{
 	font-size: 30px;
 	color: black;
 	display: inline-block;
-	text-decoration:none;
+	text-decoration: none;
 	top: 10px;
 	right: 20px;
 	font-weight: bold;
 }
 
-#menu div:hover{
+#menu > a > div:hover{
 	color: #ff0066;
 }
 
@@ -53,35 +54,28 @@ body{
 	text-align: center;
 	top: 20px;
 	font-size: 60px;
-	margin:auto;
+	margin: auto;
 }
 
 .mid{
 	position: relative;
 	top: 55px;
-	z-index: -1;
-	font-weight: bold;
-	line-height: 1.6;
+	z-index: -1;	
+	line-height: 1.8;
+	display: flex;
 }
 
 .floatImg{
-	width: 20%;
-	height: 600px;
-/* 	border: 1px solid red; */
-	display: inline-block;
-	position:relative;
-	float:left;
+	border: 0px solid red;
+	flex: 20%;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 20px;
 }
-
-#skala{
-	position: relative;
-	left: 21px;
-	top: 340px;	
-}
-
 
 .seznam{
 	position: relative;
+	font-weight: bold;	
 	top:20px;
 	left:0px;
 	padding:2px 40px 2px 0px;
@@ -92,11 +86,17 @@ ul li{
 	list-style-type: circle;
 }
 
+.right{
+	flex: 80%;
+}
+
+
 #me{
+	position: static;
 	display: inline-block;
-	width:70%;
-/* 	border: 1px solid green; */
-	margin-left: 20px;
+	width:95%;
+	border: 0px solid green;
+	margin-bottom: 40px;	
 }
 
 .bgflag{
@@ -109,6 +109,84 @@ ul li{
 	box-sizing: border-box;
 }
 
+#mMenu{
+    display: none;
+}
+
+#mMenu:hover{
+	cursor: pointer;
+} 
+
+.foot{
+	border:0px solid black;
+	width: 100%;
+	font-size: 15px;
+	margin-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+@media only screen and (orientation: portrait),
+(max-width: 800px){
+  #insta{
+  	position: fixed;
+    width: 50px;
+	right: 8px;
+	top: 2px;
+	z-index: 11;
+  }  
+  #menu > a{
+    display: none;  
+  }  
+  #mMenu{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: black;
+	text-decoration:none;
+	top: 0;
+	padding-top: 3px;
+	font-size: 45px;
+    border: 0px solid red;
+    margin: auto;
+    font-family: "courier new";
+    word-spacing: -15px;
+    height: 100%;
+  }   
+  .mid{
+  	flex-direction: column;
+  	margin: 20px 5%;
+  	line-height: 1.6;
+  }
+  .floatImg{
+	padding-left: 0;
+	width: 100%;
+	text-align: center;
+  }
+  .floatImg > img{
+  	width: 80%;  
+  }
+  #me{
+  	width: 100%;  	
+  }
+  .nadpis{
+  	top: 0;
+  }
+  .seznam{
+  	font-weight: normal;
+  	top: 0;
+  }
+  .li{
+  	padding-top:200px;
+  }
+  .foot{
+	font-size: 12px;
+	margin-top: 75px;
+  }
+  li{
+  	margin: 10px 0;
+  }
+}
 
 
 

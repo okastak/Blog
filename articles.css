@@ -1,0 +1,152 @@
+/* CSS Document */
+body{
+	background-color: white;
+	color: black;
+	height: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+hr{
+	border-width: 1px;
+	border-color: silver;
+	opacity: 0.7;
+}
+
+.nadpis{
+	position: relative;
+	color: #ff0066;
+	text-align: center;
+	top: 20px;
+	font-size: 60px;
+}
+
+.mid{
+	position: relative;
+	top: 55px;
+	z-index: -1;
+	line-height: 1.6;
+	margin: 0 20%;
+	border: 0px solid green;
+	font-size: 25px;
+}
+
+.article{
+	margin-top: 100px;
+	border: 0px solid red;
+	display: flex;
+}
+
+.image{
+	border:0px solid aqua;
+	background-size: cover;
+	flex-basis: 40%;
+}
+
+.image > img{
+	max-width: 350px;	
+}
+
+.describe{
+	border: 0px solid blue;
+	flex-basis: 60%;
+	position: relative;
+	padding-left: 5%;
+	padding-right: 1%;
+}
+
+.name{
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+	border:0px solid black;
+}
+
+.next{
+	position: absolute;
+	right: 10px;
+	bottom: 2px;
+}
+
+.foot{
+	border:0px solid black;
+	width: 100%;
+	font-size: 15px;
+	margin-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.article:hover{
+	color: #ff0066;
+}
+
+.article:active{
+	color: rgb(255, 182, 193);
+}
+
+@media only screen and (max-width: 1650px){
+	.mid{
+		margin: 0 15%;
+	}
+}
+@media only screen and (max-width: 1450px){
+	.mid{
+		margin: 0 10%;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.mid{
+		margin: 0 5%;
+		font-size: 20px;
+	}
+	.foot{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (orientation: portrait),
+(max-width: 800px){
+	.article{
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.image{
+		width: 100%;
+	}
+	.image > img{
+		max-width: 100%;
+	}
+	.describe{
+		padding: 0;
+	}
+	.next{
+		bottom: -5px;
+	}
+	.nadpis{
+		top: 0;
+		font-size: 50px;
+		line-height: 1;
+	}
+	.article hr{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+/* CSS Document */
+#insta{
+	width: 40px;
+	position: absolute;
+	right: 55px;
+	top: 85px;
+	z-index: 9;
+	background-image: url("insta.png");
+    text-decoration:none;
+}
+
+#menu{
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	height: 55px;
+	text-align: right;
+	border: 0px solid red;
+	background-color: rgba(255, 182, 193, 0.8);
+	z-index: 10;
+	overflow: hidden;
+}
+
+#menu > a{
+	box-sizing: border-box;
+	border: 0px solid red;
+	text-align: center;
+	position:relative;
+	margin: 0 20px;
+	font-size: 30px;
+	color: black;
+	display: inline-block;
+	text-decoration: none;
+	top: 10px;
+	right: 20px;
+	font-weight: bold;
+}
+
+#mMenu{
+    display: none;
+}
+
+#mMenu:hover{
+	cursor: pointer;
+}
+ 
+#menu > a > div:hover{
+	color: #ff0066;
+}
+
+
+@media only screen and (orientation: portrait),
+(max-width: 800px){
+  #insta{
+  	position: fixed;
+    width: 50px;
+	right: 8px;
+	top: 2px;
+	z-index: 11;
+  }
+  
+  #menu > a{
+    display: none;  
+  }
+  
+  #mMenu{
+    position: relative;
+    text-align: center;
+    display: block;
+    color: black;
+	text-decoration:none;
+	top: 0;
+	padding-top: 3px;
+	font-size: 45px;
+    border: 0px solid red;
+    margin: auto;
+    font-family: "courier new";
+    word-spacing: -15px;
+    height: 100%;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

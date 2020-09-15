@@ -1,0 +1,143 @@
+/* CSS Document */
+body{
+	background-color: white;
+	color: black;
+	height: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.nadpis{
+	position: relative;
+	color: #ff0066;
+	text-align: center;
+	top: 20px;
+	font-size: 60px;
+	padding-bottom: 4%;
+}
+
+.mid{
+	position: relative;
+	top: 55px;
+	z-index: -1;
+	line-height: 1.6;
+	margin: 0 20%;
+	border: 0px solid green;
+	font-size: 25px;
+}
+
+.foot{
+	border:0px solid black;
+	width: 100%;
+	font-size: 15px;
+	margin-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.seznam{
+	border: 1px solid black;
+	box-sizing: border-box;
+	float: right;
+	max-width: 40%;	
+}
+.seznam2{
+	max-width: 55%; 
+	margin-right: 5%;
+	margin-bottom: 6%;
+}
+
+.seznam3{
+	border: 1px solid black;
+	box-sizing: border-box;
+	max-width: 80%;
+	margin: 0 auto 4% auto;
+}
+
+.image-right{		
+	margin: 1% 0 1% 2%;
+	box-shadow: 5px 5px 10px black;
+	float: right;
+}
+
+.image-left{		
+	margin: 1% 2% 1% 0%;
+	box-shadow: 5px 5px 10px black;
+	float: left;
+}
+
+/* Orientace obrazku */
+.navysku{
+	max-width: 20%;
+}
+
+.nasirku{
+	max-width: 40%;
+}
+
+
+@media only screen and (max-width: 1650px){
+	.mid{
+		margin: 0 15%;
+	}
+}
+@media only screen and (max-width: 1450px){
+	.mid{
+		margin: 0 10%;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.mid{
+		margin: 0 5%;
+		font-size: 20px;
+	}
+	.foot{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (orientation: portrait),
+(max-width: 800px){	
+	.nadpis{
+		font-size: 50px;
+		line-height: 1;
+		padding-bottom: 5%;
+	}
+	.seznam{
+		max-width: 100%;	
+	}
+	.image-right{
+		margin: 2% 0 2% 2%;
+	}
+	.image-left{
+		margin: 2% 2% 2% 0;
+	}
+	.navysku{
+		max-width: 50%;
+	}
+	.nasirku, .seznam3{
+		max-width: 100%;
+	}
+	.seznam, .seznam3{
+		margin-bottom: 15%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

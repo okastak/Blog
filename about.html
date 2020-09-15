@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang='cs'>
   <head>
-    <title></title>
+    <title>About me</title>
     <meta charset='utf-8'>
-    <meta name='description' content=''>
-    <meta name='keywords' content=''>
-    <meta name='author' content=''>
+    <meta name='description' content='Markéta Kašťáková - Blog'>
+    <meta name='keywords' content='Blog, Kypr, Cyprus, povídky, psaní, cestování, traveling, writing, stories, Markéta, Kašťáková'>
+    <meta name='author' content='Ondřej Kašťák'>
     <meta name='robots' content='all'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
     <link href='/favicon.png' rel='shortcut icon' type='image/png'>
     <link href=stylyAbout.css rel=stylesheet type=text/css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
   </head>
   <body>
+
+  <script>
+  $(document).ready(function(){
+	   
+	   var open = false;
+	   
+       $("#mMenu").click(function(){
+    	  if(open === false){
+    		  $("#mMenu").text("^").css({"padding-top": "20px", "position": "absolute", "margin": "auto", "width": "100%", "top": "310px"});
+              
+          	  $("#menu").css("backgroundColor", "rgba(255, 182, 193, 0.8)").animate({
+              height: "100%"              
+          	  }, 300);
+          
+          	  $("#menu a").css({"right": "0", "borderBottom": "2px solid black", "display": "block", "padding": "20px 0"});  
+          	  
+          	  open = true;
+    	  } 
+    	  
+    	  else if(open === true){    		  
+        	  $("#menu").animate({
+                  height: "55px"              
+              }, 300, function(){
+            	 $("#menu a").css({"right": "20px", "borderBottom": "0px solid black", "display": "", "padding": ""});
+        	  
+        	  	 $("#mMenu").text("≡ Menu").css({"padding-top": "3px", "position": "relative", "top": "0"});  
+              });        	  
+          	  open = false;
+    	  }
+       }); 
+   }); 
+  </script>
+   
   
   <a href="https://www.instagram.com/marketka.kast/"><img src=insta.png id=insta></a>
   
@@ -19,7 +54,8 @@
   	<a href="index.html"><div>Home</div></a>
   	<a href="travel.html"><div>Travel</div></a>
   	<a href="writing.html"><div>Writing</div></a>
-  	<a href="about.html"><div>About</div></a>
+  	<a href="about.html" style="color: #ff0066;"><div>About</div></a>
+  	<div id=mMenu> ≡ Menu </div>
   </div>
   
    
@@ -29,7 +65,7 @@
   
   <div class=floatImg> <img src="about.jpg" width=90% id=skala></div>
    
-
+<div class="right">
 <div id=me> 
   <div class=nadpis>About me</div>
   <div class=seznam>   
@@ -47,31 +83,34 @@
 		<li>I’m also obsessed with travelling.</li>
 	</ul>
   </div>
-</div> 
+</div>
 
 <div id=me> 
   <div class=nadpis>O mně</div>
   <div class=seznam>   
 	<img src=cze.png class=bgflag>	
 	<ul>
-		<li>Jmenuju se Markéta. </li>
-	<li>Pocházím z Teplic, lázeňského města v severozápadních Čechách, u německých hranic, mezi Prahou a Drážďanami. </li>
-	<li>Narodila jsem se v červnu 1995.</li>
-	<li>Na začátku roku 2017 jsem byla ve třetím a posledním ročníku bakalářského studia oboru Angličtina a němčina pro cestovní ruch na Univerzitě Hradec Králové, ale rozhodla jsem se školu ukončit a místo toho objevovat svět. </li>
-	<li>V dubnu 2017 jsem odletěla na Paphos, na Kypr, kde jsem žila, pracovala a užívala si života celou sezonu - osm měsíců.</li>
-	<li>Vrátila jsem se další rok, 2018, kdy jsem tam strávila sedm měsíců. </li>
-	<li>Cítila jsem, že je čas na změnu a v lednu 2019 jsem odjela žít a pracovat do Spojeného Království, kde jsem dodnes (červen 2020).</li>
-	<li>V červnu 2020, jako dárek ke svým 25. narozeninám, jsem konečně začala s tímhle malým blogem, kam si můžu dávat všechny svoje nesmysly. </li>
-	<li>Jsem posedlá psaním od doby, kdy jsem se naučila, jak držet tužku.</li>
-	<li>Jsem taky posedlá cestováním. </li>
+	   	<li>Jmenuju se Markéta. </li>
+	   	<li>Pocházím z Teplic, lázeňského města v severozápadních Čechách, u německých hranic, mezi Prahou a Drážďanami. </li>
+	   	<li>Narodila jsem se v červnu 1995.</li>
+		<li>Na začátku roku 2017 jsem byla ve třetím a posledním ročníku bakalářského studia oboru Angličtina a němčina pro cestovní ruch na Univerzitě Hradec Králové, ale rozhodla jsem se školu ukončit a místo toho objevovat svět. </li>
+		<li>V dubnu 2017 jsem odletěla na Paphos, na Kypr, kde jsem žila, pracovala a užívala si života celou sezonu - osm měsíců.</li>
+		<li>Vrátila jsem se další rok, 2018, kdy jsem tam strávila sedm měsíců. </li>
+		<li>Cítila jsem, že je čas na změnu a v lednu 2019 jsem odjela žít a pracovat do Spojeného Království, kde jsem dodnes (červen 2020).</li>
+		<li>V červnu 2020, jako dárek ke svým 25. narozeninám, jsem konečně začala s tímhle malým blogem, kam si můžu dávat všechny svoje nesmysly. </li>
+		<li>Jsem posedlá psaním od doby, kdy jsem se naučila, jak držet tužku.</li>
+		<li>Jsem taky posedlá cestováním. </li>
 	</ul>
   </div>
 </div> 
 
-<br><br><br><br>
+</div>
+
 </div>   
 
-
+	<div class="foot">	
+		 Ondřej Kašťák (Developer) - Všechna práva vyhrazena - &copy;<script>$(".foot").append((new Date).getFullYear());</script>
+ 	</div>
 
   </body>
 </html>

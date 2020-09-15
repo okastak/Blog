@@ -1,42 +1,86 @@
 ﻿<!DOCTYPE html>
 <html lang='cs'>
   <head>
-    <title></title>
+    <title>Markéta Kašťáková - Blog</title>
     <meta charset='utf-8'>
-    <meta name='description' content=''>
-    <meta name='keywords' content=''>
-    <meta name='author' content=''>
+    <meta name='description' content='Markéta Kašťáková - Blog'>
+    <meta name='keywords' content='Blog, Kypr, Cyprus, povídky, psaní, cestování, traveling, writing, stories, Markéta, Kašťáková'>
+    <meta name='author' content='Ondřej Kašťák'>
     <meta name='robots' content='all'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
     <link href='/favicon.png' rel='shortcut icon' type='image/png'>
-    <link href=styly.css rel=stylesheet type=text/css>
+    <link href=styly.css rel=stylesheet type=text/css>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    
+<!--     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+<!--     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    
+    
+    
   </head>
   <body>
   
-  
     <div class=bg> </div>
   
-  
-  <div id=menu>
-  	<a href="index.html"><div>Home</div></a>
+                    
+  <div id=menu>      
+  	<a href="index.html" style="color: #ff0066;"><div>Home</div></a>
   	<a href="travel.html"><div>Travel</div></a>
   	<a href="writing.html"><div>Writing</div></a>
-  	<a href="about.html"><div>About</div></a>  
+  	<a href="about.html"><div>About</div></a> 
+    <div id=mMenu> ≡ Menu </div>
   </div>
   
   <a href="https://www.instagram.com/marketka.kast/"><img src=insta.png id=insta></a>
    
   <div class=mid>
   
-  <div class=nadpis>Little Girl in a Big World</div>
-                                                      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- <span class=moto>Dream \ Travel \ Write \ Make Memories</span>
+  <div class=nadpis> Little Girl in a Big World</div>  
+                                                      
+       
 
 </div>
-
-
-
-
+         <div class=moto> Dream \ Travel \ Write \ Make Memories </div>
+         
+         
+         
+         
+         
+         
+   <script>
+   $(document).ready(function(){
+	   
+	   var open = false;
+	   
+       $("#mMenu").click(function(){
+    	  if(open === false){
+    		  $("#mMenu").text("^").css({"color": "black", "padding-top": "20px", "position": "absolute", "margin": "auto", "width": "100%", "top": "310px"});
+              
+    		  $("#menu").css("backgroundColor", "rgba(255, 255, 255, 0.7)").animate({
+              	  height: "100%"              
+          	  }, 300);
+          
+    		  $("#menu a").css({"right": "0", "borderBottom": "2px solid black", "display": "block", "padding": "20px 0"});
+          	  
+          	  open = true;
+    	  } 
+    	  
+    	  else if(open === true){    		  
+        	  $("#menu").animate({
+                  height: "55px"              
+              }, 300, function(){
+            	 $("#menu").css("backgroundColor", "rgba(255, 255, 255, 0.4)");
+            	 $("#menu a").css({"right": "20px", "borderBottom": "0px solid black", "display": "", "padding": ""});
+        	  
+        	  	 $("#mMenu").text("≡ Menu").css({"color": "white", "padding-top": "3px", "position": "relative", "top": "0"});  
+              });        	  
+          	  open = false;
+    	  }
+       }); 
+   }); 
+   
+   </script>         
+   
   </body>
 </html>
