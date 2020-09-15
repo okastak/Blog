@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule about\.html produkty.html
+RewriteRule about travel.html
