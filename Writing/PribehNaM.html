@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title>Příběh na M</title>
+    <meta charset='utf-8'>
+    <meta name='description' content='Markéta Kašťáková - Blog'>
+    <meta name='keywords' content='Blog, Kypr, Cyprus, povídky, psaní, cestování, traveling, writing, stories, Markéta, Kašťáková'>
+    <meta name='author' content='Ondřej Kašťák'>
+    <meta name='robots' content='all'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <link href='/favicon.png' rel='shortcut icon' type='image/png'>
+    <link href=/menu.css rel=stylesheet type=text/css>
+    <link href=/clanek.css rel=stylesheet type=text/css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    
+  </head>
+  <body>
+  
+  <script>
+   $(document).ready(function(){
+	   
+	   var open = false;
+	   
+       $("#mMenu").click(function(){
+    	  if(open === false){
+    		  $("#mMenu").text("^").css({"padding-top": "20px", "position": "absolute", "margin": "auto", "width": "100%", "top": "310px"});
+              
+          	  $("#menu").css("backgroundColor", "rgba(255, 182, 193, 0.8)").animate({
+              	  height: "100%"              
+          	  }, 300);
+          
+          	  $("#menu a").css({"right": "0", "borderBottom": "2px solid black", "display": "block", "padding": "20px 0"});  
+          	  
+          	  open = true;
+    	  } 
+    	  
+    	  else if(open === true){    		  
+        	  $("#menu").animate({
+                  height: "55px"              
+              }, 300, function(){
+            	 $("#menu a").css({"right": "20px", "borderBottom": "0px solid black", "display": "", "padding": ""});
+        	  
+        	  	 $("#mMenu").text("≡ Menu").css({"padding-top": "3px", "position": "relative", "top": "0"});  
+              });        	  
+          	  open = false;
+    	  }
+       }); 
+   });      
+   </script>
+   
+   
+  <a href="https://www.instagram.com/marketka.kast/"><img src=/insta.png id=insta></a>
+  
+  <div id=menu>
+  	<a href="/"><div>Home</div></a>
+  	<a href="/Travel"><div>Travel</div></a>
+  	<a href="/Writing"><div>Writing</div></a>
+  	<a href="/About"><div>About</div></a>
+  	<div id=mMenu> ≡ Menu </div>
+  </div>
+  
+  
+  <div class=mid>
+  
+  	<div class=nadpis>
+  		Příběh na M
+  	</div>
+  	
+<!-- Telo clanku -->
+  	
+         <p>Marian, mocn&yacute; marketingov&yacute; manažer, miluje Marianu, moc milou modelku, manek&yacute;nu. Mariana moc miluje Mariana. Miluje molo, Milano, m&uuml;sli. Mariana m&aacute; mik&aacute;do, Marian mel&iacute;r. <br /> Miluj&iacute; Maledivy. Maj&iacute; m&aacute;lo &bdquo;money&ldquo;, maj&iacute; &bdquo;M&aacute;ch&aacute;č&ldquo;. <br /> &bdquo;Minisukně, mil&aacute;čku, mmmm,&ldquo; mruč&iacute; Marian. <br /> Mouchy, mot&yacute;li. Měs&iacute;c. Matrace. Marihuana.</p>
+<p><br /> Maj&iacute; M&iacute;lu, maličk&eacute; miminko. <br /> Mal&aacute; M&iacute;la m&aacute; medv&iacute;dka. Moc medv&iacute;dků. Mikul&aacute;&scaron;. Mozoly, modřiny. Maj&iacute; malou mourovatou m&iacute;cu. M&iacute;la m&aacute; mobil. M&iacute;la m&aacute; menstruaci, make-up. Miluje McDonald&rsquo;s.</p>
+<p><br /> M&iacute;la mele maso. M&iacute;la maturuje. M&aacute; medic&iacute;nu. Miluje mikrobiologii, mikrochemii, matematiku. Mocniny. Mikroskopy. Mikrometry, milisekundy, miligramy.</p>
+<p><br /> Mlad&aacute; M&iacute;la m&aacute; Michala. Michal miluje mafii. Maj&iacute; milion, miliardu. Mercedes, motorky. Moc motorek, Michal miluje motorky.</p>
+<p><br /> Maďarsko. M&iacute;la mluv&iacute; maďarsky. Manchester, Mongolsko, Maroko, Monako, Mallorca, Malta, Maledivy, Madeira, Mexiko. Moře, mango, měkk&yacute; meloun. Mojito, Martell, Martini, Metaxa.</p>
+<p><br /> Michal m&aacute; mal&eacute;r. Majetnick&yacute; mafi&aacute;n Michal. <br /> &bdquo;Můj manžel m&aacute; milenku. Můj muž miluje milenky. Mus&iacute; m&iacute;t moc milenek. Možn&aacute; ml&aacute;dne, mysl&iacute;. Muč&iacute; mě, ml&aacute;t&iacute; mě, manipuluje mnou. Michalovy man&eacute;vry, man&yacute;ry&hellip; Masakr.&ldquo;</p>
+<p><br /> M&iacute;la m&aacute; Marka. Mil&aacute;ček Marek. Mal&yacute;, mil&yacute;. Moder&aacute;tor, mixuje muziku, maluje, modeluje, miluje muzea, m&yacute;ty. Mas&aacute;že, meditace, muzik&aacute;ly, mejdany. Maraton, marimba a mambo, mari&aacute;&scaron;. <br /> Maliny, meruňky, malaga, mandle, maso. M&iacute;la miluje Marka.</p>
+
+ 	<div class="foot">	
+		 Ondřej Kašťák (Developer) - Všechna práva vyhrazena - &copy;<script>$(".foot").append((new Date).getFullYear());</script>
+ 	</div>
+ 
+  </div>
+ 
+  </body>
+</html>
+
+
+
+
