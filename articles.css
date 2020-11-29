@@ -145,6 +145,10 @@ hr{
 	.article hr{
 		display: none;
 	}
+	.name{
+		padding-top: 25px;
+		position: relative;
+	}
 }
 
 
