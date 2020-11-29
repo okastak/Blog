@@ -93,6 +93,10 @@ a{
 @media only screen and (max-width: 1650px){
 	.mid{
 		margin: 0 15%;
+		font-size: 20px
+	}
+	.nadpis{
+		font-size: 50px;
 	}
 }
 @media only screen and (max-width: 1450px){
