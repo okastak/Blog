@@ -38,6 +38,8 @@ hr{
 	margin-top: 100px;
 	border: 0px solid red;
 	display: flex;
+	border-bottom: 2px solid silver;
+	flex:100%
 }
 
 .image{
